@@ -1,0 +1,45 @@
+﻿<Window x:Class="IHM_LUTIER.Custom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Personnalisation Guitare" Height="600" Width="800">
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <TextBlock Text="Personnalisez votre guitare" FontSize="24" FontWeight="Bold" Margin="0 0 0 20"/>
+
+            <!-- Bois -->
+            <Label Content="Bois du corps:"/>
+            <ComboBox x:Name="cbBoisCorps" DisplayMemberPath="refBois" SelectedValuePath="idBois"/>
+
+            <Label Content="Bois du manche:"/>
+            <ComboBox x:Name="cbBoisManche" DisplayMemberPath="refBois" SelectedValuePath="idBois"/>
+
+            <Label Content="Bois de la touche:"/>
+            <ComboBox x:Name="cbBoisTouche" DisplayMemberPath="refBois" SelectedValuePath="idBois"/>
+
+            <!-- Micros -->
+            <Label Content="Nombre de micros:"/>
+            <ComboBox x:Name="cbNbMicros">
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+            </ComboBox>
+
+            <Label Content="Micro 1:"/>
+            <ComboBox x:Name="cbMicro1" DisplayMemberPath="refMicro" SelectedValuePath="idMicro"/>
+
+            <Label Content="Micro 2:"/>
+            <ComboBox x:Name="cbMicro2" DisplayMemberPath="refMicro" SelectedValuePath="idMicro"/>
+
+            <Label Content="Micro 3:"/>
+            <ComboBox x:Name="cbMicro3" DisplayMemberPath="refMicro" SelectedValuePath="idMicro" IsEnabled="False"/>
+
+            <!-- Vibrato -->
+            <Label Content="Vibrato:"/>
+            <ComboBox x:Name="cbVibrato" DisplayMemberPath="refVibrato" SelectedValuePath="idVibrato"/>
+
+            <!-- Valider -->
+            <Button Content="Valider la configuration" Margin="0 20 0 0"/>
+
+            <TextBlock x:Name="tbPrixTotal" FontSize="16" FontWeight="Bold"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

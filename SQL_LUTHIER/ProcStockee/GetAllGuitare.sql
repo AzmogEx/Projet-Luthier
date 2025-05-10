@@ -1,0 +1,4 @@
+﻿CREATE PROCEDURE GetAllGuitare AS 
+BEGIN
+    SELECT * FROM Guitare;
+END;

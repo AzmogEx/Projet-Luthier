@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="8e900ca6-0138-49d4-af35-f67ccd0574ff" ChangeDateTime="03/17/2025 08:30:19">
+    <Property Name="ElementName" Value="[dbo].[Guitare].[idMicro]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Guitare]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="idMicroBridge" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="05860f6f-abb5-4ebf-9bee-72ccbe3a3384" ChangeDateTime="03/17/2025 08:30:27">
+    <Property Name="ElementName" Value="[dbo].[Guitare].[idMicro_1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Guitare]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="idMicroCentral" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0a5f71ad-5972-44f4-996d-4404f3545053" ChangeDateTime="03/17/2025 08:30:30">
+    <Property Name="ElementName" Value="[dbo].[Guitare].[idMicro_2]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Guitare]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="idMicroNeck" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9ecf24b9-e538-4ef6-9ceb-e8cdc62b18e6" ChangeDateTime="03/17/2025 08:30:38">
+    <Property Name="ElementName" Value="[dbo].[Guitare].[idBois]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Guitare]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="idBoisManche" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a4f29a9d-cb85-4e3c-b0c5-fb27f8ca53db" ChangeDateTime="03/17/2025 08:30:42">
+    <Property Name="ElementName" Value="[dbo].[Guitare].[idBois_1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Guitare]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="idBoisTouche" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fe364cb6-31df-4e0c-b4a4-e94f3dd5a3ae" ChangeDateTime="03/17/2025 08:30:49">
+    <Property Name="ElementName" Value="[dbo].[Guitare].[idBois_2]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Guitare]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="idBoisCorps" />
+  </Operation>
+</Operations>

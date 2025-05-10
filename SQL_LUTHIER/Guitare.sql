@@ -1,0 +1,21 @@
+﻿CREATE TABLE Guitare(
+   idGuitare INT IDENTITY,
+   prixTotal MONEY NOT NULL,
+   [idMicroBridge] INT NOT NULL,
+   [idMicroCentral] INT,
+   [idBoisManche] INT NOT NULL,
+   [idBoisTouche] INT NOT NULL,
+   idUtilisateur INT NOT NULL,
+   [idMicroNeck] INT NOT NULL,
+   idVibrato INT NOT NULL,
+   [idBoisCorps] INT NOT NULL,
+   PRIMARY KEY(idGuitare),
+   FOREIGN KEY(idMicroBridge) REFERENCES Micro(idMicro),
+   FOREIGN KEY(idMicroCentral) REFERENCES Micro(idMicro),
+   FOREIGN KEY([idBoisManche]) REFERENCES Bois(idBois),
+   FOREIGN KEY([idBoisTouche]) REFERENCES Bois(idBois),
+   FOREIGN KEY(idUtilisateur) REFERENCES Utilisateurs(idUtilisateur),
+   FOREIGN KEY(idMicroNeck) REFERENCES Micro(idMicro),
+   FOREIGN KEY(idVibrato) REFERENCES Vibrato(idVibrato),
+   FOREIGN KEY([idBoisCorps]) REFERENCES Bois(idBois)
+);
